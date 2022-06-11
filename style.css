@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300&family=Epilogue:wght@200;300&family=Hahmlet:wght@200;300&family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sora:wght@200;300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +8,7 @@
   
 }
 div{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .home_page {
   background-image: url(public/home1.jpg);
@@ -28,7 +28,7 @@ nav .navbar {
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 450px;
   height: 100%;
   align-items: center;
@@ -86,3 +86,103 @@ nav .donate_btn {
     margin-left: 170px;
     margin-bottom: 60px;
 }
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	max-width: 70%;
+	margin: auto;
+}
+.row{
+	display: flex;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b; /* 24262b */
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+	font-weight: 500;
+}
+.footer-col ul li a{
+	margin-bottom: 10px;
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none; /* remove uderline */
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.2s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	font-size: 17px;
+}
+
+.footer-col .social-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+}
+
+
+.footer-col .social-links a{
+	display: inline-block;
+	/* background-color: green; */
+	text-align: center;
+	color: #ffffff;
+}
+
+.fab{
+  font-size: 26px;
+  transition: all 0.35s ease;
+}
+
+.fab:hover{
+  font-size: 35px;
+}
+
+.fa-youtube{
+  color: #FF0000;
+}
+.fa-instagram{
+  color: #5851DB;
+}
+.fa-spotify{
+  color: #1DB954;
+}
+.fa-twitter{
+  color: #00aecc;
+}
+
+
+
+
+
+
+
+
+

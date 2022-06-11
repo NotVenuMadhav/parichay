@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300&family=Epilogue:wght@200;300&family=Hahmlet:wght@200;300&family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sora:wght@200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300&family=Epilogue:wght@200;300&family=Hahmlet:wght@200;300&family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sora:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: white;
-  
+  text-decoration: none;
 }
-div{
-    font-family: "Poppins", sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+div {
+  font-family: "Poppins", sans-serif;
 }
 .home_page {
   background-image: url(public/home1.jpg);
@@ -17,6 +22,7 @@ div{
   height: 120vh;
   width: 100%;
 }
+
 nav .navbar {
   width: 100%;
   height: 100px;
@@ -25,7 +31,9 @@ nav .navbar {
   background: transparent;
   color: white;
   cursor: pointer;
+  transition: all 0.8s ease;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -39,7 +47,12 @@ nav .header {
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
-nav .header .logo{
+nav ul li:hover {
+  color: #c8ccc9;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+nav .header .logo {
   width: 40px;
   height: 40px;
   margin-right: 5px;
@@ -51,14 +64,33 @@ nav .header,
   align-items: center;
 }
 nav .donate_btn {
-  width: 70px;
-  height: 40px;
+  width: 90px;
+  height: 35px;
   color: azure;
-  background-color: #2ecc71;
+  background-color: #1db954;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+}
+nav .donate_btn .fas {
+  margin-right: 3px;
+}
+nav .donate_btn:hover {
+  transition: all 0.5s ease;
+  background-color: #5fd068;
+  transform: scale(1.1);
+}
+.navbar.sticky{
+  position: fixed;
+  background-color: white;
+  box-shadow: 2px 2px 20px 2px grey;
+}
+.navbar.sticky  h2{
+  color:black;
+}
+.navbar.sticky li{
+  color:black;
 }
 .podcasts {
   height: 100vh;
@@ -68,16 +100,13 @@ nav .donate_btn {
   font-size: 40px;
   font-weight: 600;
   text-align: start;
-  width: 500px ;
-  
-  
+  width: 500px;
 }
-.title .prefix{
+.title .prefix {
   font-size: 13px;
-  font-weight: 100;
-
+  font-weight: 400;
 }
-.title .dash{
+.title .dash {
   margin-right: 3px;
 }
 
@@ -88,13 +117,13 @@ nav .donate_btn {
   padding-bottom: 50px;
   line-height: 30px;
 }
-.play_btn button{
+.play_btn button {
   background: none;
   border: none;
 }
-.play_btn .fas{
+.play_btn .fas {
   color: azure;
-  background-color:#2ecc71 ;
+  background-color: #1db954;
   border-radius: 50%;
   width: 68px;
   height: 68px;
@@ -104,8 +133,13 @@ nav .donate_btn {
   font-size: 20px;
   cursor: pointer;
 }
-.play_btn .play_text{
-  margin-left:15px;
+.play_btn .fas:hover {
+  background-color: #5fd068;
+  transition: all 0.35s ease;
+  transform: scale(1.1);
+}
+.play_btn .play_text {
+  margin-left: 15px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -120,107 +154,91 @@ nav .donate_btn {
   width: 50%;
   height: 90vh;
 }
-.content{
-    margin-left: 170px;
-    margin-bottom: 60px;
+.content {
+  margin-top: 10px;
+  margin-left: 170px;
 }
-
-
-
-
-
-
 
 /* FOOTER */
-footer{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
+footer {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
-.container{
-	max-width: 70%;
-	margin: auto;
+.container {
+  max-width: 70%;
+  margin: auto;
 }
-.row{
-	display: flex;
+.row {
+  display: flex;
 }
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-.footer{
-	background-color: #24262b; /* 24262b */
-    padding: 70px 0;
+.footer {
+  background-color: #24262b; /* 24262b */
+  padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 15px;
+.footer-col {
+  width: 25%;
+  padding: 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 25px;
-	font-weight: 500;
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 500;
 }
-.footer-col ul li a{
-	margin-bottom: 10px;
-	font-size: 16px;
-	text-transform: capitalize;
-	text-decoration: none; /* remove uderline */
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.2s ease;
-}
-
-.footer-col ul li a:hover{
-	color: #ffffff;
-	font-size: 17px;
+.footer-col ul li a {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none; /* remove uderline */
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.2s ease;
 }
 
-.footer-col .social-links{
+.footer-col ul li a:hover {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.footer-col .social-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  height: 100px;
+  height: 30px;
 }
 
-
-.footer-col .social-links a{
-	display: inline-block;
-	/* background-color: green; */
-	text-align: center;
-	color: #ffffff;
+.footer-col .social-links a {
+  display: inline-block;
+  /* background-color: green; */
+  text-align: center;
+  color: #ffffff;
 }
 
-.fab{
+.fab {
   font-size: 26px;
   transition: all 0.35s ease;
 }
 
-.fab:hover{
+.fab:hover {
   font-size: 35px;
 }
 
-.fa-youtube{
-  color: #FF0000;
+.fa-youtube {
+  color: #ff0000;
 }
-.fa-instagram{
-  color: #5851DB;
+.fa-instagram {
+  color: #5851db;
 }
-.fa-spotify{
-  color: #1DB954;
+.fa-spotify {
+  color: #1db954;
 }
-.fa-twitter{
+.fa-twitter {
   color: #00aecc;
 }
-
-
-
-
-
-
-
-
-

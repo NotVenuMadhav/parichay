@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300&family=Epilogue:wght@200;300&family=Hahmlet:wght@200;300&family=Lato:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&family=Sora:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +26,7 @@ nav .navbar {
   justify-content: space-evenly;
   background: transparent;
   color: white;
+  cursor: pointer;
 }
 nav ul {
   display: flex;
@@ -38,6 +41,15 @@ nav .header {
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
+nav ul li:hover{
+  color: #c8ccc9;
+  transition: all 0.3s ease;
+}
+nav .header .logo{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
 nav .header,
 .donate {
   display: flex;
@@ -45,13 +57,21 @@ nav .header,
   align-items: center;
 }
 nav .donate_btn {
-  width: 70px;
+  width: 80px;
   height: 40px;
   color: azure;
   background-color: #2ecc71;
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
+}
+nav .donate_btn .fas{
+  margin-right: 3px;
+}
+nav .donate_btn:hover{
+  transition: all 0.5s ease;
+  background-color: #9EB23B;
 }
 .podcasts {
   height: 100vh;
@@ -63,13 +83,48 @@ nav .donate_btn {
   text-align: start;
   width: 500px ;
   
+  
 }
+.title .prefix{
+  font-size: 13px;
+  font-weight: 100;
+
+}
+.title .dash{
+  margin-right: 3px;
+}
+
 .text {
   margin-top: 20px;
   font-size: 17px;
   width: 500px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   line-height: 30px;
+}
+.play_btn button{
+  background: none;
+  border: none;
+}
+.play_btn .fas{
+  color: azure;
+  background-color:#2ecc71 ;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+.play_btn .fas:hover{
+  background-color: #9EB23B;
+  transition: all 0.35s ease;
+}
+.play_btn .play_text{
+  margin-left:15px;
+  font-size: 18px;
+  font-weight: 500;
 }
 .home {
   display: flex;
@@ -145,7 +200,7 @@ ul{
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  height: 100px;
+  height: 30px;
 }
 
 

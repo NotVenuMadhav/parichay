@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="icon" href="public/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <section class="home_page">
         <nav>
             <div class="navbar">
                 <div class="header">
-                    <img class="logo" src="public/icon.ico.png" alt="">
-                    <h3>Parichay</h3>
+                    
+                    <!-- <a href=""><h2>Parichay</h2></a> -->
                 </div>
                 <div>
                     <ul>
-                        <li>Home</li>
-                        <li>Episodes</li>
-                        <li>Blog</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>Episodes</li></a>
+                        <a href=""><li>About Us</li></a>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Contact Us</li></a>
                     </ul>
                     
                 </div>
                 <div class="donate">
                     <button class="donate_btn">
                         <span>
-                            <i class="fas fa-donate"></i>
+                            <i style="color:black;" class="fas fa-donate"></i>
                         </span>
                         Donate
                     </button>
@@ -50,7 +51,7 @@
         
                     </div>
                     <div class="play_btn">
-                        <button ><i class="fas fa-play"></i></i></button>
+                        <button ><i class="fas fa-play"></i></button>
                         <span class="play_text">START LISTENING</span>
                         
                     </div>
@@ -59,14 +60,110 @@
 
             </div>
             <div class="box">
-                
-
             </div>
         </div>
         
     </section>
+    <!-- Episodes showcase -->
     <section>
-        <div class="podcasts"></div>
+        <div class="episode_section">
+            <h3>Latest Episodes</h3>
+            <div class="episodes">
+                <div>
+                    <div class="box">
+                        <img src="public/episode1.jpeg" alt="">
+                        <button ><i class="fas fa-play"></i></button>
+                    </div>
+                    <p>Shafiqur Rahman Khan</p>
+                </div>
+                <div >
+                    <div class="box">
+                        <img src="public/episode1.jpeg" alt="">
+                        <button ><i class="fas fa-play"></i></button>
+                    </div>
+                    <p>Sagar Chaturvedi</p>
+                </div>
+                <div >
+                    <div class="box">
+                        <img src="public/episode1.jpeg" alt="">
+                        <button ><i class="fas fa-play"></i></button>
+                    </div>
+                    <p>Manikanth Billa</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Social Links-->
+    <section>
+        <div class="socials_section">
+            <h3>Subscribe and follow:</h3>
+            <div class="socials">
+                    <div class="socials_box">
+                        <div class="box">
+                            <button class="socials_btn">
+                                <span>
+                                    <i style="color:black;" class="fab fa-spotify"></i>
+                                </span>
+                               <p> Spotify </p>
+                            </button>
+                        </div>
+                    
+                        <div class="box">
+                            <button class="socials_btn">
+                                <span>
+                                    <i style="color:black;" class="fab fa-youtube"></i>
+                                </span>
+                                <br>
+                                <p> Youtube </p>
+                            </button>
+                        </div>
+                    
+                        <div class="box">
+                            <button class="socials_btn">
+                                <span>
+                                    <i style="color:black;" class="fab fa-spotify"></i>
+                                </span>
+                                <p> Platform 3 </p>
+                            </button>
+                        </div>
+    
+                        <div class="box">
+                            <button class="socials_btn">
+                                <span>
+                                    <i style="color:black;" class="fab fa-spotify"></i>
+                                </span>
+                                <p> Platform 4 </p>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- About us -->
+    <section>
+        <div class="about"></div>
+        
+    </section>
+    <!-- Contant us -->
+    <section>
+        <div class="contact">
+            <div class="contact_box contact_text"></div>
+            <div class="contact_box input">
+                <h5>Message Us</h5>
+                <div class="box1">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+        </div>
     </section>
 
 

@@ -89,10 +89,11 @@ nav .donate_btn:hover {
   background-color: white;
   box-shadow: 2px 2px 20px 2px grey;
   z-index: 999;
+ 
+}.navbar.sticky .header{
+  background-image: url(public/logo4.png);
 }
-.navbar.sticky  h2{
-  color:black;
-}
+
 .navbar.sticky li{
   color:black;
 }
@@ -194,7 +195,7 @@ nav .donate_btn:hover {
 
 }
 
-.episodes .box img:hover{
+.episodes .box:hover .img-box{
   width: 320px;
   height: 320px;
 }

@@ -47,8 +47,8 @@ nav ul {
 }
 nav .header {
   background-image: url(public/logo3.png);
-  width: 350px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
 
   font-size: 30px;
@@ -89,11 +89,10 @@ nav .donate_btn:hover {
   background-color: white;
   box-shadow: 2px 2px 20px 2px grey;
   z-index: 999;
- 
-}.navbar.sticky .header{
-  background-image: url(public/logo4.png);
 }
-
+.navbar.sticky  h2{
+  color:black;
+}
 .navbar.sticky li{
   color:black;
 }
@@ -169,8 +168,6 @@ nav .donate_btn:hover {
   height:75vh;
   width: 100%;
   background-color: white;
-  
-
 }
 .episode_section h3{
   color: black;
@@ -179,26 +176,27 @@ nav .donate_btn:hover {
   font-size: 23px;
 
 }
+
 .episodes .box{
+  position: relative;
+  margin: auto;
+  overflow: hidden;
   width: 300px;
   height: 300px;
-
-  position: relative;
-
-  
+  border-radius: 10%;
 }
 .episodes .box img{
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+.episodes .box img:hover{
+  transform: scale(1.05);
 }
 
-.episodes .box:hover .img-box{
-  width: 320px;
-  height: 320px;
-}
 .episodes .box button .fas{
   width: 40px;
   height: 40px;
@@ -213,12 +211,83 @@ nav .donate_btn:hover {
   text-align: center;
   margin-top: 10px;
 }
-/* About Us */
+
+
+/* Social Links */
+
+.socials{
+  background-image: url(public/socials_bg.jpg);
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height:50vh;
+  width: 100%;
+}
+
+.socials_section .socials_box{
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials_section h3{
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 23px;
+}
+
+.socials .box{
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+.socials .box .socials_btn{
+  width: 150px;
+  height: 150px;
+  color: black;
+  background-color: #f7c311;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer; 
+  transition: all 0.5s ease; 
+}
+
+.socials .box .socials_btn:hover{
+  transform: scale(1.1);
+  background-color: red;
+}
+
+.socials .box .socials_btn .fab{
+  transform: scale(1);
+  font-size: 50px;
+}
+.socials .box .socials_btn .fab:hover{
+  transform: scale(1.1);
+}
+
+.socials p{
+  color: black;
+  text-align: center;
+  margin-top: 13px;
+  font-size: 18px;
+}
+
+
+/* About Us
 .about{
   height: 100vh;
   background-color: black;
   width: 100%;
-}
+} */
 
 
 /* Contact Us */

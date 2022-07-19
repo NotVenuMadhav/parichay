@@ -12,7 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 div {
   font-family: "Poppins", sans-serif;
@@ -23,12 +22,11 @@ div {
   background-size: cover;
   height: 120vh;
   width: 100%;
-
 }
 
 nav .navbar {
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: space-evenly;
   color: white;
@@ -47,10 +45,9 @@ nav ul {
 }
 nav .header {
   background-image: url(public/logo3.png);
-  width: 350px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   background-size: cover;
-
   font-size: 30px;
   font-family: "Roboto", sans-serif;
 }
@@ -80,28 +77,30 @@ nav .donate_btn .fas {
 }
 nav .donate_btn:hover {
   transition: all 0.5s ease;
-  background-color: #FFCD38;
-  
+  background-color: #ffcd38;
+
   transform: scale(1.1);
 }
-.navbar.sticky{
+.navbar.sticky {
   position: fixed;
   background-color: white;
   box-shadow: 2px 2px 20px 2px grey;
   z-index: 999;
- 
-}.navbar.sticky .header{
+}
+.navbar.sticky .header {
   background-image: url(public/logo4.png);
 }
-
-.navbar.sticky li{
-  color:black;
+.navbar.sticky li {
+  color: black;
 }
 .title {
   font-size: 40px;
   font-weight: 600;
   text-align: start;
   width: 500px;
+}
+.title p,.text p{
+  color: white;
 }
 .title .prefix {
   font-size: 13px;
@@ -111,18 +110,21 @@ nav .donate_btn:hover {
   margin-right: 3px;
 }
 
-.text {
-  margin-top: 20px;
-  font-size: 17px;
+.text p{
+  margin-top: 40px;
+  font-size: 15px;
   width: 500px;
   padding-bottom: 50px;
-  line-height: 30px;
+  line-height: 25px;
+ 
 }
-.play_btn button, .episodes .box button {
+.play_btn button,
+.episodes .box button {
   background: none;
   border: none;
 }
-.play_btn .fas, .episodes .box button .fas{
+.play_btn .fas,
+.episodes .box button .fas {
   color: black;
   background-color: #f7c311;
   border-radius: 50%;
@@ -134,8 +136,9 @@ nav .donate_btn:hover {
   font-size: 20px;
   cursor: pointer;
 }
-.play_btn .fas:hover , .episodes .box button .fas:hover {
-  background-color: #FFCD38;
+.play_btn .fas:hover,
+.episodes .box button .fas:hover {
+  background-color: #f7c311;
   transition: all 0.35s ease;
   transform: scale(1.1);
 }
@@ -161,113 +164,237 @@ nav .donate_btn:hover {
 }
 /* Episodes section */
 
-
-.episodes{
+.episodes {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height:75vh;
+  height: 75vh;
   width: 100%;
   background-color: white;
-  
-
 }
-.episode_section h3{
+.episode_section h3 {
   color: black;
   margin-top: 50px;
   margin-left: 150px;
   font-size: 23px;
-
 }
-.episodes .box{
+.episodes .episode-text{
+  width: 600px;
+  text-align: right;
+  color: black;
+  line-height: 30px;
+}
+.episodes .box {
+  position: relative;
   width: 300px;
   height: 300px;
-
-  position: relative;
-
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 7px gray;
   
 }
-.episodes .box img{
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-
+.episodes .box img {
+  height: 100%;
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.episodes .box img:hover  {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 7px 7px gray;
 }
 
-.episodes .box:hover .img-box{
-  width: 320px;
-  height: 320px;
-}
-.episodes .box button .fas{
+
+.episodes .box button .fas {
   width: 40px;
   height: 40px;
   font-size: 16px;
   position: absolute;
-  bottom:15px;
-  left:15px
-  
+  bottom: 15px;
+  left: 15px;
 }
-.episodes p{
+.episodes .name{
   color: black;
   text-align: center;
   margin-top: 10px;
 }
-/* About Us */
-.about{
-  height: 100vh;
-  background-color: black;
+
+/* About us */
+
+/* Social Links */
+
+.socials_section {
   width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(public/body5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.socials_section h3 {
+  text-align: center;
+  color: #f7c311;
+  margin-top: 50px;
+  font-size: 23px;
 }
 
-
-/* Contact Us */
-.contact{
-  width: 100%;
-  height:100vh;
-  display:flex;
-}
-.contact .contact_box{
-  width: 50%;
-  height: 100vh;
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 750px;
 }
 
-.contact .input{
+.socials a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #f7c311 ;
+  transition: all 0.3s ease;
+}
+
+.socials .socials_btn .fab {
+  font-size: 60px;
+  color: black;
+}
+.socials .socials_btn .fa-youtube:hover{
+  color: #ff0000;
+
+}
+.socials .socials_btn .fa-spotify:hover{
+ color:  #1db954;
+}
+.socials .socials_btn .fa-instagram:hover{
+  color:  #cd486b;
+
+}
+.socials .socials_btn .fa-twitter:hover{
+  color: #00aecc;
+
+}
+.socials .socials_btn:hover .fab {
+  transform: scale(1.2);
   
 }
-.contact .input h5{
+
+/* About Us */
+.about{
+  height: 120vh; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.about .about-title{
+  width: 70%;
+  margin-bottom: 30px;
+  
+  
+}
+.about-title h2,p{
   color: black;
-  text-align:start;
+  line-height: 25px;
+}
+.about .about-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.about .floating{
+  background-color: #f7c311;
+  width: 30%;
+  height: 300px;
+  position: relative;
+  bottom:50px;
+  left: 70px;
+  box-shadow: 0px 2px 10px 2px gray;
+  border-radius: 20px;
+}
+.about .floating img{
+ height: 100%;
+ width: 100%;
+ border-radius: 20px;
+
+}
+.about .about-box1{
+  height: 300px;
+  width: 40%;
+}
+.about .about-box2{
+  margin-top: 20px;
+  width: 1070px;
+}
+
+/* Contact Us */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.contact .contact_box {
+  width: 50%;
+  height: 100vh;
+}
+
+.contact .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .input h2 {
+  color: black;
+  text-align: start;
   margin-bottom: 30px;
 }
-.contact .input textarea,input{
-  width: 500px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  border-radius: 3px;
-}
-.contact .input input{
-  height: 30px;
- 
-}
-.contact .input .box1{
+.contact .input textarea,
+.subject_text {
   width: 510px;
-  display: flex;
-  flex-direction: row;
+  border-radius: 5px;
+  color: black;
+  font-size: 21px;
+  padding: 20px;
 }
-
-
-
-
-
-
-
-
-
+.contact .input input {
+  margin-bottom: 20px;
+  
+  height: 35px;
+}
+.contact .input .box1 {
+  display: flex;
+  width: 510px;
+  justify-content: space-between;
+}
+.contact .input .box1 input {
+  width: 240px;
+  font-size: 21px;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+}
+.contact .contact-btn{
+  color: black;
+  height: 30px;
+  width: 60px;
+  font-size: 18px;
+  
+  
+}
 /* FOOTER */
 footer {
   line-height: 1.5;
@@ -330,24 +457,24 @@ ul {
   color: #ffffff;
 }
 
-.fab {
+.footer-col .fab {
   font-size: 26px;
   transition: all 0.35s ease;
 }
 
-.fab:hover {
+.footer-col .fab:hover {
   font-size: 35px;
 }
 
-.fa-youtube {
+.footer-col .fa-youtube {
   color: #ff0000;
 }
 .fa-instagram {
   color: #cd486b;
 }
-.fa-spotify {
+.footer-col .fa-spotify {
   color: #1db954;
 }
-.fa-twitter {
+.footer-col .fa-twitter {
   color: #00aecc;
 }
